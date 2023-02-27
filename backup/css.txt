@@ -1,0 +1,187 @@
+body, p, h1, ul, li{
+  padding: 0px;
+  margin: 0px;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*Estrutura Geral*/
+
+.estrutura {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-areas: 
+    "header header header"
+    "intro intro intro"
+    "conteudo conteudo conteudo"    
+    "servicos servicos servicos"
+    "profissionais profissionais profissionais"
+    "location location location"
+    "footer footer footer"
+  ;
+}
+
+/*header*/
+
+.header{
+  grid-area: header;
+  background:#2E2E2E;
+  padding: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  border-bottom: solid 2px #eab161;
+}
+
+
+.lago {
+  max-width: 200px;
+  cursor: default;
+}
+
+.header ul{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.header nav a{
+  display: block;
+  padding: 10px;
+  font-size: 1.125em;
+  background: rgba(0,0,0,.1);
+  border-radius: 5px;
+  text-decoration: none;
+  color: #eab161;
+  transform: .1s;
+  text-transform: uppercase;
+}
+
+.header nav a:hover{
+  background: rgba(0,0,0,.5);
+}
+
+.header li + li{
+  margin-left: 30px;
+}
+
+/*intro*/
+
+.intro {
+  background: url("../img/intro-logo.png") no-repeat center;
+  grid-area: intro;
+  background-size: cover;
+  padding: 300px 0;
+  text-align: right;
+  border-bottom: solid 2px #eab161;
+}
+
+.intro-contato{
+  float: right;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.intro-contato a{
+  color: white;
+  margin-right: 20px;
+  font-size: 1.25em;
+}
+
+.intro-contato a:nth-child(2){
+  margin-right: 130px;
+}
+
+.intro-contato img{
+  margin-right: 10px;
+}
+
+
+/*Conteúdo*/
+
+.conteudo{
+  grid-area: conteudo;
+}
+
+.container {
+  background: #dcdcdc;
+  max-width: 100%;
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  gap: 120px;
+  height: max-content;
+}
+
+.circulo div {
+  display: flex;
+  width: 120px;
+  height: auto;
+  position: absolute;
+  justify-content: center;
+}
+
+.circulo img {
+  margin: 20px 10px;
+  display: flex;
+  padding: 40px;
+  height: 120px;
+  margin-top: -120px;
+  background: #dcdcdc;
+  border-radius: 50%;
+  border: solid #eab161;
+}
+
+.circulo h1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  color: #eab161;
+  font-size: 2em;
+}
+
+
+/*Servicos*/
+
+.servicos{
+  grid-area: servicos;
+}
+
+/*profissionais*/
+
+.profissionais{
+  grid-area: profissionais;
+}
+/*location*/
+
+.location{
+  grid-area: location;
+}
+
+/*footer*/
+
+.footer{
+  grid-area: footer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

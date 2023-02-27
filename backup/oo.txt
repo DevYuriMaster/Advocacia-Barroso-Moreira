@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/Advocacia-clone/assets/css/style.css" />
+  <title>Barroso & Silva Advocacia</title>
+
+  <script>
+    document.documentElement.className = 'js';
+  </script>
+</head>
+
+<body>
+  <div class="estrutura">
+    <header class="header">
+      <a href="#" class="logo"><img src="/Advocacia-clone/assets/img/logo-advocacia-pro200.png" alt=""></a>
+
+      <ul class="social-list">
+        <li>
+          <a href="#"><img src="/Advocacia-clone/assets/img/icones/facebook-logo.png" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="/Advocacia-clone/assets/img/icones/twitter-logo.png" /></a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/nicolasbarroso/ " target="_blank" rel="external"><img
+              src="/Advocacia-clone/assets/img/icones/linkedin-logo.png" /></a>
+        </li>
+      </ul>
+
+      <nav>
+        <ul>
+          <li><a href="#">InÍcio</a></li>
+          <li><a href="#">Escritório</a></li>
+          <li><a href="#">Serviços</a></li>
+          <li><a href="#">Contatos</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="intro">
+      <div class="intro-contato"> 
+        <a href="#"><img src="/Advocacia-clone/assets/img/icones/email-.png" />nicolaslincoln45@hotmail.com</a>
+        <a href="#"><img src="/Advocacia-clone/assets/img/icones/phone.png" />(61)99929-1910</a>
+      </div>
+    </section>
+
+
+    <main class="conteudo">
+      <section class="container circulos">
+        <div class="circulo">
+          <img src="/Advocacia-clone/assets/img/list-cont.png" />
+          <h1>DESTAQUES</h1>
+        </div>
+        <div class="circulo">
+          <img src="/Advocacia-clone/assets/img/alarm-cont.png" />
+          <h1>ATENDIMENTO</h1>
+        </div>
+        <div class="circulo">
+          <img src="/Advocacia-clone/assets/img/star-cont.png" />
+          <h1>VITÓRIAS</h1>
+        </div>
+      </section>
+
+      <section class="baloes">
+        <div class="balao">
+          Atualidades sobre o mundo jurídico, prioridade na informação e
+          honestidade, sempre serão pilares desta plataforma, que busca sempre
+          conciêntizar e proteger o cliente.
+        </div>
+        <div class="balao">
+          <p>
+            Segunda-feira 09:00 – 18:00<br />
+            Terça-feira 09:00 – 18:00<br />
+            Quarta-feira 09:00 – 18:00<br />
+            Quinta-feira 09:00 – 18:00<br />
+            Sexta-feira 09:00 – 18:00<br />
+            Sábado Fechado<br />
+          </p>
+        </div>
+
+        <div class="balao">
+          Não existe vitória garantida no mundo jurídico, porém existem bons
+          advogados determinados a fazer a diferença para que tudo ocorra nos
+          conformes, mantendo a taxa de vitória sempre elevada.. Diferente da
+          vitória o esforço e proatividade são garantidos e imprecindíveis nessa
+          firma.
+        </div>
+      </section>
+    </main>
+
+    <section class="servicos">
+
+      <h1 class="servicos-titulo">Serviços</h1>
+
+      <div class="servicos-show">
+        <img src="/Advocacia-clone/assets/img/servico-logo-700x500.png" />
+
+        <div class="container-2">
+          <div class="circulo-2">
+            <h1>Direito Penal</h1>
+            <img src="/Advocacia-clone/assets/img/servicos-id.png" />
+          </div>
+          <div class="circulo-2">
+            <h1>Direito do Consumidor</h1>
+            <img src="/Advocacia-clone/assets/img/servicos-usuario.png" />
+          </div>
+          <div class="circulo-2">
+            <h1>Direito Civil</h1>
+            <img src="/Advocacia-clone/assets/img/servicos-consi.png" />
+          </div>
+          <div class="circulo-2">
+            <h1>Contratos</h1>
+            <img src="/Advocacia-clone/assets/img/servicos-documento.png" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="grid-section profissionais" id="profissionais">
+      <h1 class="titulo">Profissionais</h1>
+      <ul class="profissionais-lista js-tabmenu">
+        <li>
+          <img src="/Advocacia-treino/assets/img/Nicolas-Lincoln-Perfil.jpeg" />
+        </li>
+        <li>
+          <img src="/Advocacia-treino/assets/img/Luciene-Moreira-Perfil.jpeg" />
+        </li>
+        <li>
+          <img src="/Advocacia-treino/assets/img/Davi-Perfil.jpeg" />
+        </li>
+      </ul>
+
+      <div class="profissionais-descricao js-tabcontent">
+        <section>
+          <h2>Nicolas Lincoln Silva Barroso</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
+            veniam repellat, commodi totam ad explicabo quas eaque beatae nam</p>
+          <p> harum quos odit non nihil voluptate maxime facilis delectus sapiente
+            adipisci.</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
+            veniam repellat, commodi totam ad explicabo quas eaque beatae nam</p>
+          <p> harum quos odit non nihil voluptate maxime facilis delectus sapiente
+            adipisci.</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
+            veniam repellat, commodi totam ad explicabo quas eaque beatae nam</p>
+          <p> harum quos odit non nihil voluptate maxime facilis delectus sapiente
+            adipisci.</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
+            veniam repellat, commodi totam ad explicabo quas eaque beatae nam</p>
+          <p> harum quos odit non nihil voluptate maxime facilis delectus sapiente
+            adipisci.</p>
+        </section>
+        <section>
+          <h2>Luciene Moreira</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
+            veniam repellat, commodi totam ad explicabo quas eaque beatae nam</p>
+          <p> harum quos odit non nihil voluptate maxime facilis delectus sapiente
+            adipisci.</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
+            veniam repellat, commodi totam ad explicabo quas eaque beatae nam</p>
+          <p> harum quos odit non nihil voluptate maxime facilis delectus sapiente
+            adipisci.</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
+            veniam repellat, commodi totam ad explicabo quas eaque beatae nam</p>
+          <p> harum quos odit non nihil voluptate maxime facilis delectus sapiente
+            adipisci.</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
+            veniam repellat, commodi totam ad explicabo quas eaque beatae nam</p>
+          <p> harum quos odit non nihil voluptate maxime facilis delectus sapiente
+            adipisci.</p>
+        </section>
+        <section>
+          <h2>Davi Rodrigues Aguiar</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
+            veniam repellat, commodi totam ad explicabo quas eaque beatae nam</p>
+          <p> harum quos odit non nihil voluptate maxime facilis delectus sapiente
+            adipisci.</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
+            veniam repellat, commodi totam ad explicabo quas eaque beatae nam</p>
+          <p> harum quos odit non nihil voluptate maxime facilis delectus sapiente
+            adipisci.</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
+            veniam repellat, commodi totam ad explicabo quas eaque beatae nam</p>
+          <p> harum quos odit non nihil voluptate maxime facilis delectus sapiente
+            adipisci.</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
+            veniam repellat, commodi totam ad explicabo quas eaque beatae nam</p>
+          <p> harum quos odit non nihil voluptate maxime facilis delectus sapiente
+            adipisci.</p>
+        </section>
+      </div>
+    </section>
+
+    <section class="location">
+      <img src="/Advocacia-clone/assets/img/location/localizacao.jpeg">
+      <div class="local">
+        <p>QNM 20 Conjunto L, Celândia Norte, Brasília/DF</p>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <ul class="social-list">
+        <li>
+          <a href="#"><img src="/Advocacia-clone/assets/img/icones/facebook-logo.png" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="/Advocacia-clone/assets/img/icones/twitter-logo.png" /></a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/nicolasbarroso/ " target="_blank" rel="external"><img
+              src="/Advocacia-clone/assets/img/icones/linkedin-logo.png" /></a>
+        </li>
+      </ul>
+
+      <p>Advocacia Barroso & Silva Todos os Direitos reservados</p>
+    </footer>
+  </div>
+
+</body>
+
+</html>
