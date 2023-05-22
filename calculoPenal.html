@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/cadLog.css">
+    <title>ABS - Calculo Penal</title>
+</head>
+
+<body>
+
+    <div class="estrutura">
+        <header class="header">
+            <a href="#" class="logo"><img src="/assets/img/logo-advocacia-pro200.png" alt=""></a>
+
+            <ul class="social-list">
+                <li>
+                    <a href="#"><img src="/assets/img/icones/facebook-logo.png" /></a>
+                </li>
+                <li>
+                    <a href="#"><img src="/assets/img/icones/twitter-logo.png" /></a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/nicolasbarroso/ " target="_blank" rel="external"><img
+                            src="/assets/img/icones/linkedin-logo.png" /></a>
+                </li>
+            </ul>
+
+            <nav>
+                <ul>
+                    <li><a href="/index.html">InÍcio</a></li>
+                    <li><a href="/index.html#location">Escritório</a></li>
+                    <li><a href="/index.html#servicos">Serviços</a></li>
+                    <li><a href="/cadastro.html">Cadastro</a></li>
+                    <li><a href="/calculoPenal.html">Cálculo de Pena</a></li>
+                </ul>
+            </nav>
+        </header>
+
+
+
+        <main class="conteudo">
+            <div class="container">
+                <Form class="cadLog-form" method="POST" id="formCadastro">
+                    <h1>Calcular Término da Pena</h1>
+                    <label for="data-condenacao">Data da condenação:</label>
+                    <input type="date" id="data-condenacao" name="data-condenacao"><br>
+
+                    <label for="tempo-condenacao">Tempo da condenação (em anos):</label>
+                    <input type="number" id="tempo-condenacao" name="tempo-condenacao"><br>
+
+                    <label for="remicao">Remição (em dias):</label>
+                    <input type="number" id="remicao" name="remicao"><br>
+
+                    <label for="detracao">Detração (em dias):</label>
+                    <input type="number" id="detracao" name="detracao"><br>
+
+                    <label for="regime-atual">Regime atual:</label>
+                    <select id="regime-atual" name="regime-atual">
+                        <option value="fechado">Fechado</option>
+                        <option value="semiaberto">Semiaberto</option>
+                        <option value="aberto">Aberto</option>
+                    </select><br>
+
+                    <button type="button" onclick="calcularPena()">Calcular pena</button>
+
+                    <p class="resultado" id="resultado"></p>
+                </Form>
+            </div>
+        </main>
+
+
+
+        <footer class="footer">
+            <ul class="social-list-f">
+                <li>
+                    <a href="#"><img src="/assets/img/icones/facebook-logo.png" /></a>
+                </li>
+                <li>
+                    <a href="#"><img src="/assets/img/icones/twitter-logo.png" /></a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/nicolasbarroso/ " target="_blank" rel="external"><img
+                            src="/assets/img/icones/linkedin-logo.png" /></a>
+                </li>
+            </ul>
+
+            <div class="direitos" id="direitos">
+                <p>Advocacia Barroso & Silva</p>
+                <p>Todos os direitos reservados</p>
+                <p>Fale conosco: (61) 9 9929-1910</p>
+            </div>
+        </footer>
+
+
+    </div>
+
+    <script src="/assets/js/calculoPenal.js"></script>
+</body>
+
+</html>
