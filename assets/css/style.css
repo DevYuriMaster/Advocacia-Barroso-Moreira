@@ -112,8 +112,6 @@ a {
   .social-list li {
     display: none;
   }
-
-
 }
 
 /*intro*/
@@ -529,7 +527,7 @@ a {
 
 .location {
   grid-area: location;
-  background: url("/Advocacia-Barroso-Moreira/assets/img/location/localizacao.jpeg") no-repeat;
+  background: url("/assets/img/location/localizacao.jpeg") no-repeat;
   padding: 200px 0;
   background-size: cover;
   width: 100%;
@@ -637,7 +635,6 @@ a {
   .assine-container{
     margin: 20px 40px;
     
-  
   }
 }
 
