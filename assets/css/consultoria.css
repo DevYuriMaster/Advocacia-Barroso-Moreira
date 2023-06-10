@@ -1,0 +1,202 @@
+* {
+    font-family: 'Inter';
+    list-style: none;
+    text-decoration: none;
+}
+
+body,
+p,
+h1,
+ul,
+li {
+    padding: 0px;
+    margin: 0px;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*Estrutura*/
+
+
+.estrutura {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-areas:
+        "header header header"
+        "conteudo conteudo conteudo"
+        "footer footer footer"
+}
+
+@media(max-width: 760px) {
+    .estrutura {
+        min-width: 600px;
+        grid-template-columns: 100%;
+        grid-template-areas:
+            "header"
+            "conteudo"
+            "footer"
+    }
+}
+
+
+/*header*/
+.header {
+    grid-area: header;
+    background: #2E2E2E;
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    border-bottom: solid 2px #eab161;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+
+
+.lago {
+    max-width: 200px;
+    cursor: default;
+}
+
+.header ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.header nav a {
+    display: block;
+    padding: 10px;
+    font-size: 1.125em;
+    background: rgba(0, 0, 0, .1);
+    border-radius: 5px;
+    text-decoration: none;
+    color: #eab161;
+    transform: .1s;
+    text-transform: uppercase;
+}
+
+.header nav a:hover {
+    background: rgba(0, 0, 0, .5);
+}
+
+.header li+li {
+    margin-left: 30px;
+}
+
+@media(max-width: 1060px) {
+    .header {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .social-list li {
+        display: none;
+    }
+}
+
+/*main*/
+
+.conteudo {
+    grid-area: conteudo;
+    background-color: #eab161;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120vh;
+}
+
+.container {
+    width: 400px;
+    padding: 20px;
+    height: auto;
+    background-color: #2E2E2E;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.container h1 {
+    text-align: center;
+    color: #eab161;
+    margin: 5px;
+}
+
+.container label {
+    text-align: center;
+    color: #eab161;
+    margin: 5px;
+    border-radius: 4px;
+}
+
+.card{
+    background: #2E2E2E;
+}
+
+.cadLog-form {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    margin: 10px 20px;
+    padding: 10px;
+}
+
+.cadLog-form input {
+    padding: 4px;
+}
+
+.cadLog-form button {
+    padding: 5px;
+    margin: 20px 0px;
+    cursor: pointer;
+    flex-basis: auto;
+}
+
+.cadLog-form button:hover {
+    color: #eab161;
+    background-color: #2E2E2E;
+}
+
+
+.cadLog-form p {
+    color: #2E2E2E;
+    background: #eab161;
+    text-align: center;
+}
+
+
+/*Footer*/
+.footer {
+    grid-area: footer;
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 100%;
+    background: #2E2E2E;
+}
+
+
+.social-list-f {
+    display: flex;
+    grid-column: 1;
+    justify-content: center;
+    margin: 10px 20px;
+    gap: 20px;
+}
+
+.direitos {
+    grid-column: 2;
+    position: relative;
+    margin: 10px 20px;
+}
+
+.direitos p {
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    font-size: 1.1rem;
+}

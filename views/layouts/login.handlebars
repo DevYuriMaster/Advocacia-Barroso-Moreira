@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/login.css">
+    <title>ABS - Login</title>
+</head>
+
+<body>
+
+    <div class="estrutura">
+        <header class="header">
+            <a href="#" class="logo"><img src="/img/logo-advocacia-pro200.png" alt=""></a>
+
+            <ul class="social-list">
+                <li>
+                    <a href="#"><img src="/img/icones/facebook-logo.png" /></a>
+                </li>
+                <li>
+                    <a href="#"><img src="/img/icones/twitter-logo.png" /></a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/nicolasbarroso/ " target="_blank" rel="external"><img
+                            src="/img/icones/linkedin-logo.png" /></a>
+                </li>
+            </ul>
+
+            <nav>
+                <ul>
+                    <li><a href="/">InÍcio</a></li>
+                    <li><a href="/#location">Escritório</a></li>
+                    <li><a href="consultar">Consultar</a></li>
+                    <li><a href="cadastro">Cadastro</a></li>
+                    <li><a href="calculo">Cálculo de Pena</a></li>
+                </ul>
+            </nav>
+        </header>
+
+
+
+        <main class="conteudo">
+            <div class="container">
+                <Form class="cadLog-form" method="POST" id="formCadastro" action="login">
+                    <table class="tabela">
+                        <thead class="card">
+                            <tr>
+                                <th>Nome</th>
+                                <th>Telefone</th>
+                                <th>CPF</th>
+                                <th>Senha</th>
+                                <th>Ação</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {{#each cadastros}}
+                            <tr>
+                                <td>{{nome}}</td>
+                                <td>{{telefone}}</td>
+                                <td>{{cpf}}</td>
+                                <td>{{senha}}</td>
+                                <td><a href="/login/{{id}}">Deletar</a></td>
+                            </tr>
+                            {{/each}}
+                        </tbody>
+                    </table>
+                </Form>
+            </div>
+        </main>
+
+
+        <footer class="footer">
+            <ul class="social-list-f">
+                <li>
+                    <a href="#"><img src="/img/icones/facebook-logo.png" /></a>
+                </li>
+                <li>
+                    <a href="#"><img src="/img/icones/twitter-logo.png" /></a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/nicolasbarroso/ " target="_blank" rel="external"><img
+                            src="/img/icones/linkedin-logo.png" /></a>
+                </li>
+            </ul>
+
+            <div class="direitos" id="direitos">
+                <p>Advocacia Barroso & Silva</p>
+                <p>Todos os direitos reservados</p>
+                <p>Fale conosco: (61) 9 9929-1910</p>
+            </div>
+        </footer>
+
+
+    </div>
+
+    <script src="/js/redirect.js"></script>
+</body>
+
+</html>

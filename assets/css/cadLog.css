@@ -20,6 +20,7 @@ li {
 a {
     text-decoration: none;
 }
+
 /*Estrutura*/
 
 
@@ -103,7 +104,7 @@ a {
 
 /*main*/
 
-.conteudo{
+.conteudo {
     grid-area: conteudo;
     background-color: #eab161;
     display: flex;
@@ -112,30 +113,31 @@ a {
     height: 120vh;
 }
 
-.container{
+.container {
     width: 400px;
     padding: 20px;
     height: auto;
-    background-color:#2E2E2E;
+    background-color: #2E2E2E;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
-  
-.container  h1 {
+
+.container h1 {
     text-align: center;
     color: #eab161;
     margin: 5px;
 }
 
-.container  label {
+.container label {
     text-align: center;
     color: #eab161;
     margin: 5px;
     border-radius: 4px;
 }
 
-.cadLog-form{
+.cadLog-form {
     display: flex;
     flex-direction: column;
+    width: auto;
     margin: 10px 20px;
     padding: 10px;
 }
@@ -144,25 +146,24 @@ a {
     padding: 4px;
 }
 
-.cadLog-form button{
-    padding: 5px  ;
+.cadLog-form button {
+    padding: 5px;
     margin: 20px 0px;
     cursor: pointer;
     flex-basis: auto;
 }
 
-.cadLog-form button:hover{
+.cadLog-form button:hover {
     color: #eab161;
     background-color: #2E2E2E;
 }
 
-.cadLog-form p{
+
+.cadLog-form p {
     color: #2E2E2E;
     background: #eab161;
     text-align: center;
-
 }
-
 
 
 /*Footer*/
@@ -195,4 +196,3 @@ a {
     text-align: center;
     font-size: 1.1rem;
 }
-
