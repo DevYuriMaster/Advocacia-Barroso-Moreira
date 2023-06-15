@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/cadLog.css">
-    <title>ABS - Cadastro</title>
+    <title>ABS - LoginADM</title>
 </head>
 
 <body>
@@ -33,24 +33,41 @@
 
         <main class="conteudo">
             <div class="container">
-                <form class="cadLog-form" method="POST" id="formCadastro" action="login">
-                    <h1>CADASTRE-SE</h1>
-                    <label>NOME COMPLETO</label>
-                    <input required="" maxlength="50" name="nome" type="text" placeholder="ex..José da Silva Pereira">
-
-                    <label>TELEFONE</label>
-                    <input required="" maxlength="11" name="telefone" id="campoTelefone" type="text" placeholder="ex..21 9993-3882">
+                <form class="cadLog-form" id="form-login" method="POST" action="/loginADM">
+                    <h1>ADMINISTRADOR</h1>
 
                     <label>CPF</label>
-                    <input required="" id="campoCPF" maxlength="11" name="cpf" type="text" placeholder="007.332.233-02">
+                    <input required="" maxlength="11" name="cpf" type="text" placeholder="CPF" id="campoCPF">
 
                     <label>SENHA</label>
-                    <input required="" id="campoSenha" name="senha" type="password" placeholder="*****">
+                    <input required="" maxlength="20" id="campoSenha" name="senha" type="password" placeholder="*****">
 
-                    <button onclick="validarTelefone()"  type="submit">ENVIAR</button>
+                    <button type="submit" onclick="submitForm()">ENVIAR</button>
+                    <p>PÁGINA EXCLUSIVA DE ADM</p>
 
-                    <p>Já possui login? <a href="logar">Fazer Login</a></p>
+                    <script>
+                        function submitForm() {
+                            var cpf = document.getElementById("campoCPF").value;
+                            var senha = document.getElementById("campoSenha").value;
+
+                            // Enviar os dados do formulário para a rota /loginADM
+                            var xhr = new XMLHttpRequest();
+                            xhr.open("POST", "/loginADM", true);
+                            xhr.setRequestHeader("Content-Type", "application/json");
+                            xhr.onreadystatechange = function () {
+                                if (xhr.readyState === XMLHttpRequest.DONE && xhr.status === 200) {
+                                    // Autenticação bem-sucedida, redirecionar para a página inicial
+                                    window.location.href = "/";
+                                } else if (xhr.readyState === XMLHttpRequest.DONE) {
+                                    // Autenticação falhou, exibir mensagem de erro
+                                    alert("CPF ou senha inválida!");
+                                }
+                            };
+                            xhr.send(JSON.stringify({ cpf: cpf, senha: senha }));
+                        }
+                    </script>
                 </form>
+
             </div>
         </main>
 
@@ -79,9 +96,9 @@
 
     </div>
 
-    <script src="/js/redirect.js"></script>
-    <script src="/js/rules.js"></script>
 
+    <script src="/js/rules.js"></script>
+    <script src="/js/redirect.js"></script>
 </body>
 
 </html>
